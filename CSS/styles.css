@@ -113,10 +113,13 @@ body, html {
 /* HOME */
 .hero {
   height: 100vh; 
-  width: 75%;
+  width: 100%;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start; 
+  margin: 0 auto;
+  padding-left: 240px;
+  box-sizing: border-box;
 }
 
     .hero h1 {
@@ -164,11 +167,17 @@ body, html {
       transform: scale(1.04);
     }
 
-    .hero img{
-      width: 150px;            
-      height: 150px;           
+    .hero-foto {
+      margin-left: 220px;    /* empuja la foto a la derecha */
+      margin-bottom: 40px;
+    }
+
+    .hero-foto img {
+      width: 360px;            
+      height: 360px;           
       border-radius: 50%;      
       object-fit: cover;
+      border: 2px solid #0072ff;
     }
 
     .hero h1, .hero h2, .hero-nombre {
@@ -179,7 +188,7 @@ body, html {
 /* ABOUT ME SECCION */
 .about-section{
     text-align: center;
-    scroll-margin-top: 250px;
+    scroll-margin-top: 220px;
 }
 
     .about-section h1 {
@@ -211,6 +220,7 @@ body, html {
 .tech-section {
   text-align: center;
   padding: 60px 20px;
+  scroll-margin-top: 120px;
 }
 
     .tech-section h1 {
@@ -232,6 +242,7 @@ body, html {
 .projects-section {
   text-align: center;
   padding: 60px 20px;
+  scroll-margin-top: 250px;
 }
 
     .projects-section h1 {
@@ -254,6 +265,7 @@ body, html {
     text-align: center;
     padding-top: 20px;
     padding-bottom: 20px;
+    scroll-margin-top: 150px;
 }
 
     .contacto h2{
