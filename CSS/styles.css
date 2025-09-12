@@ -187,7 +187,7 @@ body, html {
 
 /* ABOUT ME SECCION */
 .about-section{
-    text-align: center;
+    text-align: start;
     scroll-margin-top: 330px;
 }
 
@@ -195,12 +195,18 @@ body, html {
     margin: 70px auto 10px;
     font-size: 50px;
     color: #0072ff;
+    margin: 1.875rem auto 0.05rem;
+    max-width: 75rem;
+    width: 80%;
     }
 
     .about-section h3 {
         margin: 10px auto 10px;
         font-size: 24px;
         color: #4facfe;
+        margin: 0.100rem auto 1.075rem;
+        max-width: 75rem;
+        width: 80%;
     }
 
     .about-section p {
