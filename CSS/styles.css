@@ -231,54 +231,26 @@ body, html {
 
     .tech-section h1 {
       font-size: 50px;
-      margin-bottom: 10px;
+      margin: 1.875rem auto 0.05rem;
+      max-width: 75rem;
       font-weight: 700;
       color: #0072ff;
     }
 
     .tech-section h2 {
       font-size: 28px;
-      margin-bottom: 30px;
+      margin-top: 5px;
+      margin-bottom: 70px;
       font-weight: 700;
       color: #4facfe;
     }
-
-    .tech-logos{
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-      row-gap: 20px;
-      width: 100%;
-      place-items: center;
-    }
-
-    .tech-logos img {
-      width: 60px;
-      height: 60px;
-      object-fit: contain;
-      transition: transform 0.2s ease-in-out;
-    }
-
-    .tech-logos img:hover {
-      transform: scale(1.2);
-    }
-
-    .tech-logos-front{
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr 1fr;
-      row-gap: 20px;
-      width: 100%;
-      place-items: center;
-    }
-
-    .tech-logos-front img {
-      width: 60px;
-      height: 60px;
-      object-fit: contain;
-      transition: transform 0.2s ease-in-out;
-    }
-
-    .tech-logos-front img:hover {
-      transform: scale(1.2);
+    
+    .tech-texto{
+      text-align: center;
+      color: #fff;
+      font-size: 22px;
+      margin-bottom: 10px; /* Espacio debajo del título */
+      font-weight: normal;
     }
 
     .tech-box{
@@ -298,8 +270,8 @@ body, html {
       display: flex;
       justify-content: center;
       align-items: flex-start;
-      gap: 80px;
       margin-right: 0;
+      margin-bottom: 80px;
     }
 
     .tech-box-group {
@@ -309,13 +281,55 @@ body, html {
       width: 80%;
     }
 
-    .tech-texto{
-      text-align: center;
-      color: #fff;
-      font-size: 22px;
-      margin-bottom: 10px; /* Espacio debajo del título */
-      font-weight: normal;
+    .tech-logos{
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+      row-gap: 20px;
+      width: 100%;
+      place-items: center;
     }
+
+    .tech-logos img {
+      object-fit: contain;
+      transition: transform 0.2s ease-in-out;
+    }
+
+    .tech-logos img:hover {
+      transform: scale(1.2);
+    }
+
+    .tech-logos-front{
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      row-gap: 20px;
+      width: 100%;
+      place-items: center;
+    }
+
+    .tech-logos-front img {
+      object-fit: contain;
+      transition: transform 0.2s ease-in-out;
+    }
+
+    .tech-logos-front img:hover {
+      transform: scale(1.2);
+    }
+
+    .tech-logos-front img.logo-html { filter: drop-shadow(0 0 5px #e44d26) drop-shadow(0 0 3px #e44d26); }
+    .tech-logos-front img.logo-css { filter: drop-shadow(0 0 5px #264de4) drop-shadow(0 0 3px #264de4); }
+    .tech-logos-front img.logo-js { filter: drop-shadow(0 0 5px #f7df1e) drop-shadow(0 0 3px #f7df1e); }
+    .tech-logos-front img.logo-sfml { filter: drop-shadow(0 0 5px #1e920f) drop-shadow(0 0 3px #1b940b); }
+    .tech-logos img.logo-csharp { filter: drop-shadow(0 0 5px #662bf0) drop-shadow(0 0 3px #662bf0); }
+    .tech-logos img.logo-github { filter: drop-shadow(0 0 5px #696868) drop-shadow(0 0 3px #5c5a5a); }
+    .tech-logos img.logo-git { filter: drop-shadow(0 0 5px #a03014) drop-shadow(0 0 3px #923119); }
+    .tech-logos img.logo-codeblocks { filter: drop-shadow(0 0 5px #f7df1e) drop-shadow(0 0 3px #f7df1e); }
+    .tech-logos img.logo-c { filter: drop-shadow(0 0 5px #1c49dd) drop-shadow(0 0 3px #1c49dd); }
+    .tech-logos img.logo-java { filter: drop-shadow(0 0 5px #66473f) drop-shadow(0 0 3px #634943); }
+    .tech-logos img.logo-sql { filter: drop-shadow(0 0 5px #f31818) drop-shadow(0 0 3px #f31818); }
+    .tech-logos img.logo-asp { filter: drop-shadow(0 0 5px #3567f0) drop-shadow(0 0 3px #3567f0); }
+    .tech-logos img.logo-vs { filter: drop-shadow(0 0 5px #662bf0) drop-shadow(0 0 3px #662bf0); }
+    .tech-logos img.logo-vscode { filter: drop-shadow(0 0 5px #2a51bd) drop-shadow(0 0 3px #264cb6); }
+
 
 /* SECCION DE PROYECTOS */
 .projects-section {
