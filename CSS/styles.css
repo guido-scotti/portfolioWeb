@@ -188,7 +188,7 @@ body, html {
 /* ABOUT ME SECCION */
 .about-section{
     text-align: center;
-    scroll-margin-top: 220px;
+    scroll-margin-top: 330px;
 }
 
     .about-section h1 {
@@ -219,8 +219,8 @@ body, html {
 /* SECCION DE TECH STACK */
 .tech-section {
   text-align: center;
-  padding: 60px 20px;
-  scroll-margin-top: 120px;
+  padding: 210px 20px;
+  scroll-margin-top: 30px;
 }
 
     .tech-section h1 {
@@ -239,10 +239,9 @@ body, html {
 
     .tech-logos{
       display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      row-gap: 0px;
-      column-gap: 10px;
-      width: 80%;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+      row-gap: 20px;
+      width: 100%;
       place-items: center;
     }
 
@@ -257,11 +256,30 @@ body, html {
       transform: scale(1.2);
     }
 
+    .tech-logos-front{
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      row-gap: 20px;
+      width: 100%;
+      place-items: center;
+    }
+
+    .tech-logos-front img {
+      width: 60px;
+      height: 60px;
+      object-fit: contain;
+      transition: transform 0.2s ease-in-out;
+    }
+
+    .tech-logos-front img:hover {
+      transform: scale(1.2);
+    }
+
     .tech-box{
       display: flex;
       justify-content: space-evenly;
       width: 100%;
-      height: 450px;
+      height: 160px;
       margin: 0;
       border-radius: 15px;
       background: linear-gradient(135deg, #23243a, #2a2d4d, #3a3e5c 90%);
@@ -280,9 +298,9 @@ body, html {
 
     .tech-box-group {
       display: flex;
-      flex-direction: column;
+      flex-direction: row;
       align-items: center;
-      width: 380px;
+      width: 80%;
     }
 
     .tech-texto{
@@ -290,6 +308,7 @@ body, html {
       color: #fff;
       font-size: 22px;
       margin-bottom: 10px; /* Espacio debajo del título */
+      font-weight: normal;
     }
 
 /* SECCION DE PROYECTOS */
