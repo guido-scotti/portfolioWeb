@@ -1,6 +1,6 @@
 # 🌐 Personal Portfolio
 
-![Portfolio Preview](Images/others/preview.png)  
+![Portfolio Preview](Images/preview.png)  
 
 ---
 
