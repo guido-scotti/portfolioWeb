@@ -22,16 +22,17 @@
 <body>
 
   <!-- NAVBAR -->
-   <header class="navbar">
+   <header class="navbar reveal-up" >
        <a href="#top" class="logo">
         Guido<span class="logodev">.dev</span>
        </a>
       <nav class="nav-links">
-        <a href="#top">Home</a>
-        <a href="#about">About</a>
-        <a href="#techstack">Training</a>
-        <a href="#projects">Projects</a>
-        <a href="#contacto">Contact</a>
+        <a href="#top" data-en="Home" data-es="Inicio">Home</a>
+        <a href="#about" data-en="About" data-es="Sobre mí">About</a>
+        <a href="#techstack" data-en="Training" data-es="Formación">Training</a>
+        <a href="#projects" data-en="Projects" data-es="Proyectos">Projects</a>
+        <a href="#contacto" data-en="Contact" data-es="Contacto">Contact</a>
+        <img src="Images/png/language.png" id="lang-toggle" alt="lang" width="34">
       </nav>
    </header>
 
@@ -51,47 +52,83 @@
 </aside>
 
 <!-- HOME -->
-   <section id="top" class="hero">
+<section id="top" class="hero">
 
     <!-- COLUMNA IZQUIERDA -->
-    <div>
-      <h2>Hi, i'm</h2>
+    <div class="hero-texto">
+      <h2 data-en="Hi, i'm" data-es="Hola, soy">Hi, i'm</h2>
       <span class="hero-nombre">
         Guido Scotti
       </span>
-      <h1>I'm a front-end web developer!</h1>
+      <h1 data-en="I'm a front-end web developer!" 
+        data-es="Soy un desarrollador web front-end!">
+        I'm a front-end web developer!
+      </h1>
       <div class="hero-resume">
-        <a href="https://drive.google.com/file/d/1ft-GiM3iEcreAM0UisqHtX5zwUVm019Q/view?usp=sharing" target="_blank">RESUME</a>
+        <a target="_blank" data-en="RESUME" data-es="CV" 
+          href="https://drive.google.com/file/d/1LvZQu51Tj20JlG6BtmFPSeKmocJtHa75/view?usp=sharing"
+          data-es-href="https://drive.google.com/file/d/1uMIo4hikrqJA8UUqZMFI-bKFtnH3KwXI/view?usp=sharing" 
+          data-en-href="https://drive.google.com/file/d/1LvZQu51Tj20JlG6BtmFPSeKmocJtHa75/view?usp=sharing">
+          RESUME
+        </a>
       </div>
     </div>
 
     <!-- COLUMNA DERECHA -->
     <div class="hero-foto">
-      <img src="/Images/others/fotoguido.jpg" alt="Guido Scotti">
+      <img src="/Images/others/fotogui2.jpg" alt="Guido Scotti">
     </div>
-  </section>
+</section>
 
   <!-- ABOUT US -->
-  <section id="about" class="about-section">
-    <h1> ABOUT ME </h1>
-    <h3>Passionate about coding, design, and continuous learning.</h3>
-    <p>I’m Guido Scotti, a <span>web developer</span> and <span>programming student</span> from Buenos Aires, Argentina. Since July 2024, 
+<section id="about" class="about-section reveal-up">
+
+    <h1 data-en="ABOUT ME" data-es="SOBRE MÍ"> ABOUT ME </h1>
+
+    <h3 data-en="Passionate about coding, design, and continuous learning." 
+      data-es="Apasionado por la programación, el diseño y 
+      el aprendizaje continuo.">
+      Passionate about coding, design, and continuous learning.
+    </h3>
+
+    <p data-en="I’m Guido Scotti, a <span>web developer</span> 
+      and <span>programming student</span> from Buenos Aires, Argentina. Since July 2024, 
       I’ve been working as a Teaching Assistant for Programming 1 at the National Technological University (UTN), 
-      where I help students learn the fundamentals of programming with C++. I enjoy creating clean and functional projects, 
-      combining creativity with problem-solving skills. Beyond coding, I’m passionate about sports like rugby, 
-      as well as music and design, which inspire me to bring fresh and original ideas into my work. 
-      I consider myself organized, responsible, and always eager to take on new challenges.</p>
-  </section>
+      where I help students learn the fundamentals of programming with C++. " 
+      data-es="Soy Guido Scotti, <span>desarrollador web</span> y 
+      <span>estudiante de programación</span> de Buenos Aires, Argentina. 
+      Desde julio de 2024, trabajo como ayudante de cátedra en Programación 1 en la Universidad Tecnológica Nacional (UTN), 
+      donde ayudo a los estudiantes a aprender los fundamentos de la programación con C++.">
+      I’m Guido Scotti, a <span>web developer</span> 
+      and <span>programming student</span> from Buenos Aires, Argentina. Since July 2024, 
+      I’ve been working as a Teaching Assistant for Programming 1 at the National Technological University (UTN), 
+      where I help students learn the fundamentals of programming with C++. 
+    </p>
+
+    <p data-en="I enjoy creating clean and functional projects, combining creativity with problem-solving skills. Beyond coding, 
+      I’m passionate about sports like rugby, as well as music and design, which inspire me to bring fresh and original 
+      ideas into my work. I consider myself organized, responsible, and always eager to take on new challenges." 
+      data-es="Disfruto crear 
+      proyectos limpios y funcionales, combinando creatividad con habilidades para resolver problemas. Además de programar, me apasionan 
+      deportes como el rugby, la música y el diseño, que me inspiran a aportar ideas frescas y originales a mi trabajo. Me considero 
+      organizado, responsable y siempre dispuesto a asumir nuevos desafíos.">
+      I enjoy creating clean and functional projects, combining 
+      creativity with problem-solving skills. Beyond coding, 
+      I’m passionate about sports like rugby, as well as music and design, which inspire me to bring fresh and original 
+      ideas into my work. I consider myself organized, responsible, and always eager to take on new challenges.
+    </p>
+
+</section>
 
 <!-- TECH STACK -->
-<section id="techstack" class="tech-section">
-  <h1>TRAINING</h1>
-  <h2>My whole stack!</h2>
+<section id="techstack" class="tech-section reveal-up">
+  <h1 data-en="TRAINING" data-es="FORMACIÓN">TRAINING</h1>
+  <h2 data-en="My whole stack!" data-es="Todo mi stack!">My whole stack!</h2>
 
-  <h3 class="tech-texto">BACK-END</h3>
-  <div class="tech-container">
-      <div class="tech-box-group">
-          <div class="tech-box">
+  <div class="tech-container reveal-up">
+    <div class="tech-box-group">
+      <div class="tech-box">
+            <h3 class="tech-texto reveal-up ">BACK-END</h3>
             <div class="tech-logos">
               <img src="/Images/png/c++.png" class="logo-c" width="55" alt="c++"/>
               <img src="/Images/png/c.png" class="logo-csharp" width="55" alt="c#"/>
@@ -103,10 +140,10 @@
       </div>
   </div>
 
-  <h3 class="tech-texto">FRONT-END</h3>
-   <div class="tech-container">
-      <div class="tech-box-group">
-          <div class="tech-box">
+  <div class="tech-container reveal-up">
+    <div class="tech-box-group">
+      <div class="tech-box">
+            <h3 class="tech-texto reveal-up">FRONT-END</h3>
             <div class="tech-logos-front">
               <img src="/Images/png/html.png" class="logo-html" width="75" alt="html5"/>
               <img src="/Images/png/css.png" class="logo-css" width="55" alt="css3"/>
@@ -117,10 +154,10 @@
       </div>
     </div>
 
-    <h3 class="tech-texto">TOOLS</h3>
-    <div class="tech-container">
+    <div class="tech-container reveal-up">
       <div class="tech-box-group">
-          <div class="tech-box">
+        <div class="tech-box">
+            <h3 class="tech-texto reveal-up" data-en="TOOLS" data-es="HERRAMIENTAS">TOOLS</h3>
             <div class="tech-logos">
               <img src="/Images/png/github.png" class="logo-git" width="60" alt="git"/>
               <img src="/Images/png/githubblanco.png" class="logo-github" width="60" alt="github"/>
@@ -132,54 +169,226 @@
       </div>
     </div>
     
-  <div class="academic">
-    <h2>Academic background</h2>
-    <p>Technical degree in programming (in process)</p>
-    <p>Responsive web design, freeCodeCamp.</p>
-    <p>JavaScript Algorithms & Data Structures, freeCodeCamp.</p>
-  </div>
+  </section>
+  
+  <section class="education-section reveal-up">
+  <h2 data-en="Academic background" data-es="Formación académica">Academic background</h2>
+    <h3 data-en="TECHNICAL DEGREE IN PROGRAMMING" data-es="TECNICATURA EN PROGRAMACIÓN">TECHNICAL DEGREE IN PROGRAMMING</h3>
+    <div class="separador"></div>
+    <a class="badge" href="https://www.frgp.utn.edu.ar/">
+      <img src="/Images/png/utn.png" class="logo-utn" width="30" alt="utn"/>UTN FRGP
+    </a>
+    <p data-en="I am currently pursuing a Technical Degree in Programming at the National Technological University (UTN). Throughout this program, 
+      I am learning the fundamentals of programming, database design and modeling, algorithmic logic, and data structures, 
+      working with languages such as C#, C++, and Java. The degree also emphasizes teamwork, clean coding practices, 
+      and software engineering principles to prepare me for building real-world, scalable applications." 
+      data-es="Actualmente curso la Tecnicatura en Programación en la Universidad Tecnológica Nacional (UTN). 
+      A lo largo de esta carrera, aprendo fundamentos de programación, diseño y modelado de bases de datos, lógica algorítmica y 
+      estructuras de datos, trabajando con lenguajes como C#, C++ y Java. La carrera también enfatiza el trabajo en equipo, buenas 
+      prácticas de código y principios de ingeniería de software para prepararme para desarrollar aplicaciones reales y escalables.">
+      I am currently pursuing a Technical Degree in Programming at the National Technological University (UTN). Throughout this program, 
+        I am learning the fundamentals of programming, database design and modeling, algorithmic logic, and data structures, 
+        working with languages such as C#, C++, and Java. The degree also emphasizes teamwork, clean coding practices, 
+        and software engineering principles to prepare me for building real-world, scalable applications.
+    </p>
+
+    <h3 data-en="RESPONSIVE WEB DESIGN" data-es="DISEÑO WEB RESPONSIVE">RESPONSIVE WEB DESIGN</h3>
+    <div class="separador"></div>
+    <a class="badge" href="https://www.freecodecamp.org/learn/2022/responsive-web-design/">
+      <img src="/Images/png/freecamp.png" class="logo-free" width="30" alt="free"/>freeCodeCamp
+    </a>
+    <p data-en="In this course, I gained knowledge of 
+      HTML5 and CSS3 applied to modern web development. I learned to structure semantic content, 
+      apply styles through cascading style sheets, work with Flexbox and Grid, and design interfaces that adapt to different devices. 
+      The course also focused on accessibility and responsive design best practices to ensure websites look and perform well 
+      on any screen." 
+      data-es="En este curso adquirí conocimientos de HTML5 y CSS3 aplicados al desarrollo web moderno. 
+      Aprendí a estructurar contenido semántico, aplicar estilos con hojas de estilo en cascada, trabajar con Flexbox y Grid, 
+      y diseñar interfaces que se adaptan a diferentes dispositivos. El curso también se centró en accesibilidad y buenas prácticas de 
+      diseño responsivo para asegurar que los sitios se vean y funcionen bien en cualquier pantalla.">In this course, I gained knowledge of 
+      HTML5 and CSS3 applied to modern web development. I learned to structure semantic content, 
+      apply styles through cascading style sheets, work with Flexbox and Grid, and design interfaces that adapt to different devices. 
+      The course also focused on accessibility and responsive design best practices to ensure websites look and perform well 
+      on any screen.
+    </p>
+
+    <h3 data-en="JAVASCRIPT ALGORITHMS & DATA STRUCTURES" data-es="ALGORITMOS Y ESTRUCTURAS DE DATOS CON JAVASCRIPT">JAVASCRIPT ALGORITHMS & DATA STRUCTURES</h3>
+    <div class="separador"></div>
+    <a class="badge" href="https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures-v8/">
+      <img src="/Images/png/freecamp.png" class="logo-free" width="30" alt="free"/>freeCodeCamp
+    </a>
+    <p data-en="This certification allowed me to deepen my understanding of JavaScript, the most widely used language in web development. 
+      I practiced control structures, functions, arrays, objects, and object-oriented programming. 
+      In addition, I worked with algorithms and data structures, improving my problem-solving skills and code optimization. 
+      This course strengthened my JavaScript foundations and provided essential tools for front-end development and algorithmic challenges." 
+      data-es="Esta certificación me permitió profundizar mi conocimiento de JavaScript, el lenguaje más utilizado en 
+      desarrollo web. Practiqué estructuras de control, funciones, arrays, objetos y programación orientada a objetos. 
+      Además, trabajé con algoritmos y estructuras de datos, mejorando mis habilidades para resolver problemas y optimizar código. 
+      Este curso fortaleció mis bases de JavaScript y me brindó herramientas esenciales para el desarrollo front-end y desafíos 
+      algorítmicos.">This certification allowed me to deepen my understanding of JavaScript, the most widely used language in web development. 
+      I practiced control structures, functions, arrays, objects, and object-oriented programming. 
+      In addition, I worked with algorithms and data structures, improving my problem-solving skills and code optimization. 
+      This course strengthened my JavaScript foundations and provided essential tools for front-end development and algorithmic challenges.
+    </p>
+
 </section>
 
 
 <!-- PROJECTS -->
-<section id="projects" class="projects-section">
-  <h1>MY PROJECTS!</h1>
-  <h2>Stuff...</h2>
+<section id="projects" class="projects-section reveal-up">
+  <h1 data-en="MY PROJECTS!" data-es="MIS PROYECTOS!">MY PROJECTS!</h1>
+  <h2 data-en="My work" data-es="Mi trabajo">My work</h2>
+
+  <div class="projects-container reveal-up">
+
+    <!-- PLANTS VS PROFES -->
+    <div class="project-box">
+      <div class="project-img-wrapper">
+        <img src="/Images/others/pvz2.png" alt="Plants vs Profes" class="project-img"/>
+      </div>  
+      <div class="project-info">
+        <div class="borde-proyecto"></div>
+        <h3 data-en="PLANTAS VS PROFES" data-es="PLANTAS VS PROFES">PLANTAS VS PROFES</h3>
+        <p data-en="A tower defense console game parodying Plants vs Zombies, where university professors replace the zombies. 
+                  Built in <span class='color-c'>C++</span> with SFML for graphics, sound, and music." 
+           data-es="Juego de consola estilo tower defense, parodia de Plants vs Zombies, donde los profesores de la facultad 
+                  reemplazan a los zombies. Hecho en <span class='color-c'>C++</span> y SFML para gráficos, sonidos y música.">
+           A tower defense console game parodying Plants vs Zombies, where university professors replace the zombies. 
+           Built in <span class="color-c">C++</span> with <span class="color-sfml">SFML</span> for graphics, sound, and music.
+        </p>
+      </div>
+        <div class="project-links">
+          <a href="https://github.com/Lolociriaco/PlantasVsProfes" target="_blank" class="github-link">
+            <img src="/Images/png/githubblanco.png" alt="github" width="30"/>
+          </a>
+        </div>
+    </div>
+
+    <!-- CUATRO EN RAYA -->
+    <div class="project-box">
+      <div class="project-img-wrapper">
+        <img src="/Images/others/cuatroraya.png" alt="Cuatro en raya" class="project-img"/>
+      </div>
+      <div class="project-info">
+        <div class="borde-proyecto"></div>
+        <h3 data-en="CONNECT 4" data-es="4 EN RAYA">CONNECT 4</h3>
+        <p data-en="A console-based Connect 4 game developed in <span class='color-c'>C++</span>. Players take turns dropping pieces into a vertical grid,
+                  aiming to connect four of their pieces in a row horizontally, vertically, or diagonally." 
+           data-es="Juego de consola realizado en <span class='color-c'>C++</span>. Los jugadores se turnan para dejar caer fichas en una 
+                  cuadrícula vertical, intentando conectar cuatro de sus fichas en una fila horizontal, vertical o diagonal.">
+           A console-based Connect 4 game developed in <span class="color-c">C++</span>. Players take turns dropping pieces into a vertical grid,
+           aiming to connect four of their pieces in a row horizontally, vertically, or diagonally.
+        </p>
+      </div>
+          <div class="project-links"> 
+            <a href="https://github.com/luka-raffo/UTN4EnRaya" target="_blank" class="github-link">
+              <img src="/Images/png/githubblanco.png" alt="github" width="30"/>
+            </a>
+          </div>  
+    </div>
+
+    <!-- EL GUAPO DEL PUERTO -->
+    <div class="project-box">
+      <div class="project-img-wrapper">
+        <img src="/Images/others/guapo.png" alt="Guapo" class="project-img"/>
+      </div>
+      <div class="project-info">
+        <div class="borde-proyecto"></div>
+        <h3 data-en="EL GUAPO DEL PUERTO" data-es="EL GUAPO DEL PUERTO">EL GUAPO DEL PUERTO</h3>
+        <p data-en="A landing page for a grill restaurant, created with <span class='color-html'>HTML</span>, <span class='color-css'>CSS</span>, and <span class='color-js'>JavaScript</span>. 
+                    It features a responsive design, menu showcase and contact information." 
+           data-es="Landing page para una parrilla restaurante, hecha con <span class='color-html'>HTML</span>, <span class='color-css'>CSS</span> y <span class='color-js'>JavaScript</span>. 
+                    Cuenta con un diseño responsivo, muestra del menú e información de contacto.">
+           A landing page for a grill restaurant, created with <span class="color-html">HTML</span>, <span class="color-css">CSS</span>, and <span class="color-js">JavaScript</span>. 
+           It features a responsive design, menu showcase and contact information.
+        </p>
+      </div>
+      <div class="project-links"> 
+        <a href="https://github.com/guido-scotti/El-Guapo-Del-Puerto" target="_blank" class="github-link">
+          <img src="/Images/png/githubblanco.png" alt="github" width="30"/>
+        </a>
+        <a href="http://elguapodelpuerto.com.ar/" target="_blank" class="guapo-link">
+          <img src="/Images/png/web.png" alt="guapo" width="30"/>
+        </a>
+      </div>
+    </div>
+
+    <!-- RR SCD MED -->
+    <div class="project-box">
+      <div class="project-img-wrapper">
+        <img src="Images/others/clinica2.png" alt="TP Clinica" class="project-img">
+      </div>
+      <div class="project-info">
+        <div class="borde-proyecto"></div>
+        <h3 data-en="RR-SCD MED" data-es="RR-SCD MED">RR-SCD MED</h3>
+        <p data-en="A clinic management system built with C#, ASP.NET, <span class='color-html'>HTML</span>, <span class='color-css'>CSS</span>, and SQL Server. 
+                  It allows admin users to manage doctors and patients (CRUD), while doctors can view and manage their appointments." 
+           data-es="Sistema de gestión de clínica desarrollado con <span class='color-csharp'>C#</span>, <span class='color-asp'>ASP.NET</span>, <span class='color-html'>HTML</span>, <span class='color-css'>CSS</span> y <span class='color-sql'>SQL Server</span>. Permite a los administradores 
+                  gestionar médicos y pacientes (ABML), y a los médicos ver y modificar sus turnos.">
+           A clinic management system built with <span class="color-csharp">C#</span>, <span class="color-asp">ASP.NET</span>, <span class="color-html">HTML</span>, <span class="color-css">CSS</span>, and <span class="color-sql"> SQL Server</span>. It allows admin users to manage doctors 
+           and patients (CRUD), while doctors can view and manage their appointments.
+        </p>
+      </div>
+      <div class="project-links"> 
+        <a href="https://github.com/Lolociriaco/TP_Clinica" target="_blank" class="github-link">
+          <img src="/Images/png/githubblanco.png" alt="github" width="30"/>
+        </a>
+      </div>
+    </div>
+
+  </div>
 </section>
 
 
 <!-- CONTACTO -->
-<section id="contacto" class="contacto">
-    <h2>REACH ME!</h2>
-    <div class="iconos-contacto">
-      <a href="https://www.linkedin.com/in/guidoscotti/" target="_blank"> 
-          <img src="/Images/png/linkedinblanco.png" alt="linkedin" width="38"/>
-      </a>
+<section id="contacto" class="contacto reveal-up">
+  <h1 data-en="GET IN TOUCH" data-es="CONTACTAME">GET IN TOUCH</h1>
+    <h2 data-en="REACH ME!" data-es="ENVIAME UN MENSAJE!">REACH ME!</h2>
 
-      <a href="https://mail.google.com/mail/?view=cm&fs=1&to=scottigui@gmail.com" target="_blank"> 
-          <img src="/Images/png/mailblanco.png" alt="mail" width="34"/>
-      </a>
-
-      <a href="https://github.com/guido-scotti" target="_blank"> 
-          <img src="/Images/png/githubblanco.png" alt="github" width="30"/>
-      </a>
+  <form id="contact-form">
+    <div class="left-form">
+      <input class="inputs" type="text" id="name" name="name" 
+        placeholder="Your name" data-en="Your name" data-es="Tu nombre" required>
+      <input class="inputs" type="email" id="email" name="email" 
+        placeholder="youremail@example.com" data-en="youremail@example.com" data-es="tuemail@ejemplo.com" required>
+      <textarea class="inputs" id="message" name="message" rows="4" 
+        placeholder="Message" data-en="Message" data-es="Mensaje" required></textarea>
     </div>
+      <button class="message-button" type="submit" data-en="SEND" data-es="ENVIAR">SEND</button> 
+  </form>
+
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+
 </section> 
 
 <div class="borde"></div>
 
 <!-- DERECHOS -->
 <section id="derechos" class="derechos">
-  <footer>
-    <p>&copy; 2025 <span class="resaltado">Guido Scotti.</span> All rights reserved.</p>
-  </footer>
-</section>
 
-<!-- MODAL IMAGEN -->
-<div id="imagen-modal" class="modal">
-  <span class="cerrar">&times;</span>
-  <img class="modal-contenido" id="img-ampliada">
-</div>
+  <div class="iconos-derechos">
+    <a href="https://www.linkedin.com/in/guidoscotti/" target="_blank"> 
+      <img src="/Images/png/linkedinblanco.png" alt="linkedin" width="38"/>
+    </a>
+    
+    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=scottigui@gmail.com" target="_blank"> 
+      <img src="/Images/png/mailblanco.png" alt="mail" width="34"/>
+    </a>
+    
+    <a href="https://github.com/guido-scotti" target="_blank"> 
+      <img src="/Images/png/githubblanco.png" alt="github" width="30"/>
+    </a>
+  </div>
+
+  <footer>
+    <p 
+    data-en="&copy; 2025 <span class='resaltado'>Guido Scotti.</span> All rights reserved" 
+    data-es="&copy; 2025 <span class='resaltado'>Guido Scotti.</span> Todos los derechos reservados">
+    &copy; 2025 <span class="resaltado">Guido Scotti.</span> All rights reserved.
+  </p>
+  </footer>
+
+</section>
 
 <script src="main.js"></script>
 </body>
