@@ -52,6 +52,10 @@ function setLanguage(lang) {
   document.querySelectorAll('[data-en-href][data-es-href]').forEach(a => {
     a.href = a.getAttribute(`data-${lang}-href`);
   });
+
+  document.querySelectorAll('.lang-btn').forEach(btn => {
+    btn.classList.toggle('lang-toggle-active', btn.dataset.lang === lang);
+  });
 }
 
 const langToggle = document.getElementById('lang-toggle');
@@ -61,9 +65,10 @@ if (langToggle) {
   });
 }
 
-document.querySelectorAll('.lang-option').forEach(opt => {
-  opt.addEventListener('click', () => {
-    setLanguage(opt.dataset.lang);
+document.querySelectorAll('.lang-btn').forEach(btn => {
+  btn.addEventListener('click', (e) => {
+    e.preventDefault();
+    setLanguage(btn.dataset.lang);
   });
 });
 

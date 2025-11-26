@@ -1,0 +1,446 @@
+/* Responsividad */
+@media (max-width: 1024px) {
+  .navbar {
+    padding: 10px 25px;
+  }
+  .nav-links {
+    margin-right: 180px;
+    gap: 10px;
+  }
+  .nav-links a {
+    font-size: 16px;
+  }
+
+  .sidebar {
+    display: none;
+  }
+
+  .hero {
+    padding-left: 160px;
+    padding-right: 40px;
+  }
+
+  .hero h1 { font-size: 2.4rem; }
+  .hero h2 { font-size: 2rem; }
+  .hero-nombre { font-size: 3.2rem; }
+
+  .hero-foto img {
+    width: 300px;
+    height: 300px;
+    margin-right: 90px;
+  }
+
+  .about-section h1 { font-size: 42px; }
+  .about-section p { font-size: 1.2rem; }
+
+  .tech-section {
+    padding-top: 140px;
+  }
+
+  .tech-section h1 {
+    font-size: 40px;
+  }
+
+  .tech-section h2 {
+    font-size: 24px;
+  }
+
+  .tech-box {
+    height: auto;
+    padding: 25px 0;
+    flex-direction: column;
+  }
+
+  .tech-box-group {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .tech-texto {
+    writing-mode: horizontal-tb;
+    margin-bottom: 15px;
+  }
+
+  .tech-logos {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .tech-logos-front {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  /* EDUCATION */
+  .education-section {
+    max-width: 80%;
+    padding: 25px;
+  }
+
+  .education-section h2 {
+    font-size: 24px;
+  }
+
+  .education-section h3 {
+    font-size: 20px;
+  }
+
+  .education-section p {
+    font-size: 16px;
+    width: 100%;
+  }
+
+  .projects-container {
+    width: 85%;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .project-img {
+    max-width: 500px;
+  }
+
+   .left-form {
+        max-width: 60%;
+    }
+
+    .contacto h1 {
+        font-size: 42px;
+    }
+}
+
+/* Tablets vertical / teléfonos grandes (≤768px) */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 10px 20px;
+  }
+
+  .nav-links {
+    gap: 12px;
+    margin-right: 10px;
+  }
+
+  .nav-links a {
+    font-size: 15px;
+  }
+
+  /* Sidebar más finito */
+  .sidebar {
+    width: 26px;
+    padding: 15px;
+    height: 22vh;
+  }
+
+  .icon-left {
+    gap: 15px;
+  }
+
+  .hero {
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 0;
+    text-align: center;
+  }
+
+  .hero-foto {
+    margin-left: 0;
+    margin-top: 25px;
+    margin-bottom: 10px;
+  }
+
+  .hero h1 { font-size: 2.1rem; }
+  .hero h2 { font-size: 1.7rem; }
+  .hero-nombre { font-size: 2.6rem; }
+
+  .hero-foto img {
+    width: 260px;
+    height: 260px;
+  }
+
+  .hero-resume a {
+    width: 160px;
+    font-size: 20px;
+    line-height: 55px;
+  }
+
+  /* About */
+  .about-section h1 { font-size: 34px; }
+  .about-section h3 { font-size: 20px; }
+  .about-section p { font-size: 1rem; }
+
+  .tech-section {
+    padding-top: 120px;
+  }
+
+  .tech-section h1 {
+    font-size: 32px;
+  }
+
+  .tech-section h2 {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+
+  .tech-box {
+    width: 95%;
+    padding: 20px 10px;
+  }
+
+  .tech-box-group {
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+  }
+
+  .tech-texto {
+    font-size: 16px;
+    margin-bottom: 10px;
+    writing-mode: horizontal-tb;
+  }
+
+  .tech-logos {
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 15px;
+  }
+
+  .tech-logos-front {
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 15px;
+  }
+
+  .tech-logos img,
+  .tech-logos-front img {
+    width: 50px;
+  }
+
+  /* EDUCATION */
+  .education-section {
+    width: 90%;
+    max-width: none;
+    padding: 20px;
+    margin-top: 50px;
+  }
+
+  .education-section h2 {
+    font-size: 22px;
+  }
+
+  .education-section h3 {
+    font-size: 18px;
+  }
+
+  .education-section p {
+    font-size: 15px;
+    margin-top: 12px;
+  }
+
+  .badge {
+    font-size: 14px;
+    padding: 3px 8px;
+  }
+
+  .separador {
+    height: 20px;
+    margin: 0 6px;
+  }
+
+  .logo-utn,
+  .logo-free {
+    width: 22px;
+    height: 22px;
+  }
+
+  .projects-container {
+    grid-template-columns: 1fr;
+    width: 90%;
+  }
+
+  .projects-section h1 {
+    font-size: 40px;
+  }
+
+  .projects-section h2 {
+    font-size: 22px;
+  }
+
+    .contacto {
+        padding-top: 80px;
+        padding-bottom: 60px;
+    }
+
+    .contacto h1 {
+        font-size: 36px;
+    }
+
+    .contacto h2 {
+        font-size: 22px;
+    }
+
+    .left-form {
+        max-width: 80%;
+    }
+
+    .message-button {
+        width: 130px;
+        font-size: 16px;
+        line-height: 38px;
+    }
+
+    .borde {
+        width: 90%;
+    }
+}
+
+/* Teléfonos (≤480px) */
+@media (max-width: 480px) {
+
+  .navbar {
+    padding: 8px 14px;
+  }
+
+  .logo {
+    font-size: 20px;
+  }
+
+  .nav-links {
+    display: none; 
+  }
+
+  /* Sidebar invisible en mobile (opcional) */
+  .sidebar {
+    display: none;
+  }
+
+  .hero {
+    padding-top: 20px;
+    margin-left: 20px;
+  }
+
+  .hero h1 { font-size: 1.7rem; }
+  .hero h2 { font-size: 1.4rem; }
+  .hero-nombre { font-size: 2.1rem; }
+
+  .hero-foto img {
+    width: 200px;
+    height: 200px;
+    margin: auto;
+    margin-top: 40px;
+  }
+
+  .hero-resume a {
+    width: 140px;
+    font-size: 18px;
+    line-height: 48px;
+  }
+
+  .about-section h1 { font-size: 28px; }
+  .about-section h3 { font-size: 18px; }
+  .about-section p {
+    font-size: 0.95rem;
+  }
+
+  .tech-section h1 {
+    font-size: 28px;
+  }
+
+  .tech-section h2 {
+    font-size: 18px;
+  }
+
+  .tech-texto {
+    font-size: 18px;
+    transform: translateY(0);
+    margin-top: 0;
+    padding-top: 0;
+  }
+
+  .tech-logos {
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 30px;
+  }
+
+  .tech-logos-front {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .tech-logos img,
+  .tech-logos-front img {
+    width: 40px;
+  }
+
+  /* EDUCATION */
+  .education-section {
+    padding: 15px;
+    width: 85%;
+  }
+
+  .education-section h2 {
+    font-size: 20px;
+  }
+
+  .education-section h3 {
+    font-size: 16px;
+  }
+
+  .education-section p {
+    font-size: 14px;
+  }
+
+  .projects-container {
+    width: 80%;
+  }
+
+   .project-box {
+    width: 95%;
+  }
+
+  .project-box img {
+    max-height: 130px;
+  }
+
+  .project-info h3 {
+    font-size: 16px;
+  }
+
+  .project-links {
+    gap: 15px;
+  }
+
+  .projects-section h1 {
+    font-size: 32px;
+  }
+
+  .projects-section h2 {
+    font-size: 20px;
+  }
+
+   .contacto {
+        padding-top: 60px;
+        padding-bottom: 50px;
+    }
+
+    .contacto h1 {
+        font-size: 30px;
+    }
+
+    .contacto h2 {
+        font-size: 20px;
+    }
+
+    .left-form {
+        max-width: 95%;
+    }
+
+    .inputs {
+        font-size: 15px;
+        padding: 10px 12px;
+    }
+
+    .message-button {
+        width: 120px;
+        font-size: 15px;
+        line-height: 36px;
+    }
+
+    .iconos-derechos a {
+        width: 40px;
+        height: 30px;
+    }
+}
